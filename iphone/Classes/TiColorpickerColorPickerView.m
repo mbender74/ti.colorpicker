@@ -38,6 +38,15 @@
     [self updateContentMode];
 }
 
+
+-(void)setSelectionColor_:(id)value
+{
+    ENSURE_TYPE(value, NSNumber);
+    [[self colorPicker] setSelectionColor:[TiUtils floatValue:value]];
+}
+
+
+
 #pragma mark Layout helper
 
 -(void)updateContentMode
